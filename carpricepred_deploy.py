@@ -6,7 +6,7 @@ import pickle
 
 st.write("""
 
-# Car price prediction using Machine Learning
+# Car Price Prediction using Machine Learning
 #    
 
 """)
@@ -17,7 +17,7 @@ st.image(image, use_column_width=True)
 
 st.write("""
 
-### --------------------------- Made by ❤ Sagar Dhandare ---------------------------
+###  Made by ❤ Sagar Dhandare 
 ##    
 
 """)
