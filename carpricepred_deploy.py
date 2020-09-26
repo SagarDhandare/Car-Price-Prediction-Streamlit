@@ -51,11 +51,11 @@ elif fuel_type == "CNG":
     Fuel_type_diesel = 0
     Fuel_type_Petrol = 0
 
-indivisual = st.selectbox('Are you an Indivisual or a Dealer?', ("indivisual", "Dealer"))
-if indivisual =="indivisual":
-    Seller_Type_Indivisual = 1
-elif indivisual == "Dealer":
-    Seller_Type_Indivisual = 0
+Individual = st.selectbox('Are you an Individual or a Dealer?', ("Individual", "Dealer"))
+if Individual =="Individual":
+    Seller_Type_Individual = 1
+elif Individual == "Dealer":
+    Seller_Type_Individual = 0
 
 Transmission = st.selectbox('What kind of transmission does it have?', ('Manual', 'Automatic'))
 if Transmission =='Manual':
@@ -67,7 +67,7 @@ if st.button("Predict"):
     pickle_in = open("Random_forest_regression_model.pkl", "rb")
     rf_classifier = pickle.load(pickle_in)
 
-    pred123 = rf_classifier.predict([[Present_Price,Kms_Driven,owners,years_old,Fuel_type_diesel,Fuel_type_Petrol,Seller_Type_Indivisual,Transmission_Manual]])
+    pred123 = rf_classifier.predict([[Present_Price,Kms_Driven,owners,years_old,Fuel_type_diesel,Fuel_type_Petrol,Seller_Type_Individual,Transmission_Manual]])
 
     st.write(f"""
 
