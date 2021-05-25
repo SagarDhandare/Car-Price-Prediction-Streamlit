@@ -1,6 +1,6 @@
 # Car Price Prediction Project
 
-• This repository conatin all the required files to deploy Machine Learning Model.
+• This repository contain all the required files to deploy Machine Learning Model.
 
 • A Web App created with Streamlit and deployed on Heroku platform.
 
